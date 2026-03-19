@@ -114,6 +114,24 @@ A genuine worker in a flood zone may have poor GPS signal and inconsistent senso
 - 🟢 **Green (auto-approved):** Trust score above threshold, all signals consistent → payout credited immediately
 - 🟡 **Yellow (soft flag):** One or two inconsistent signals → payout held for max 2 hours, worker notified in-app, single photo verification resolves it instantly
 - 🔴 **Red (hard flag):** Multiple high-confidence fraud signals → payout withheld, escalated to manual review, worker notified with clear reason and appeal option. No account suspension without human confirmation
+## 🔧 System Architecture
+- Mobile app collects:
+  -GPS
+  -Sensor data
+  -Session activity
+Backend processes:
+  -Weather & AQI APIs
+  -User data
+  -Trigger conditions
+AI Engine:
+  -Calculates risk score
+  -Runs fraud detection model
+  -Validates multi-signal trust score
+Decision Layer:
+  -If trigger + trust score valid → payout
+  -Else → flag (yellow/red)
+Payment Service:
+  -Instant payout to user wallet
 
 ## 🗓️ Development Plan
 
