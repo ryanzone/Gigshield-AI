@@ -51,7 +51,7 @@ GigShield AI is a mobile-based parametric insurance platform that:
 # Installation and Setup
 ```
 # Clone repo
-git clone https://github.com/your-username/Gigshield-AI.git
+git clone https://github.com/ryanzone/Gigshield-AI.git
 
 # Navigate
 cd Gigshield-AI
