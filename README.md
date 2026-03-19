@@ -66,9 +66,9 @@ npm start
 npx expo start
 ```
 ## 🧠 AI/ML Integration
-- **Risk Prediction:** Predict high-risk days using historical weather trends
+- **Risk Prediction:** Uses historical weather + payout data to estimate probability of trigger events
 - **Dynamic Pricing:** Adjust premiums based on location risk profile
-- **Fraud Detection:** Analyze GPS, motion, and activity patterns to flag anomalies
+- **Fraud Detection:** Rule-based + anomaly detection on: motion patterns, IP clustering, device fingerprints
 
 ## 🛠️ Tech Stack
 - **Frontend:** React Native (Expo)
