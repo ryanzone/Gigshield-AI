@@ -48,7 +48,23 @@ GigShield AI is a mobile-based parametric insurance platform that:
 - 🌊 Government flood alert
 
 👉 Based on real-world data → automatic payouts, no manual claims
+# Installation and Setup
+```
+# Clone repo
+git clone https://github.com/your-username/Gigshield-AI.git
 
+# Navigate
+cd Gigshield-AI
+
+# Install dependencies
+npm install
+
+# Run backend
+npm start
+
+# Run mobile app
+npx expo start
+```
 ## 🧠 AI/ML Integration
 - **Risk Prediction:** Predict high-risk days using historical weather trends
 - **Dynamic Pricing:** Adjust premiums based on location risk profile
