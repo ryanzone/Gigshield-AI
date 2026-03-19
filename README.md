@@ -69,14 +69,6 @@ npx expo start
 - **Risk Prediction:** Uses historical weather + payout data to estimate probability of trigger events
 - **Dynamic Pricing:** Adjust premiums based on location risk profile
 - **Fraud Detection:** Rule-based + anomaly detection on: motion patterns, IP clustering, device fingerprints
-## 🚨 Market Crash Response
-- During a simulated “Market Crash”, fraud rings attempt to drain the system using GPS spoofing.
-  
-- GigShield AI prevents this by:
-  - Multi-signal verification (not GPS alone)
-  - Ring detection via timing + IP clustering
-  - Device fingerprinting
-  - Tiered payout control (Green / Yellow / Red)
 👉 Result: Fraud payouts are blocked before liquidity is impacted.
 ## 🛠️ Tech Stack
 - **Frontend:** React Native (Expo)
@@ -96,7 +88,14 @@ GigShield's AI layer does not rely on GPS alone. Every payout decision is scored
 - **Historical route fingerprint:** Each user builds a location history over time. The system flags claims where the reported location has never appeared in the user's past 30-day route data
 - **Device sensor cross-check:** Real weather exposure affects GPS signal quality, network handoffs between cell towers, and battery drain patterns. A spoofed location from a stable home environment produces clean sensor readings that contradict the claimed adverse conditions
 - **Session behaviour:** Genuine workers in bad weather open the app briefly to check status. Coordinated fraud rings show simultaneous sessions with identical interaction patterns across multiple accounts
-
+## 🚨 Market Crash Response
+- During a simulated “Market Crash”, fraud rings attempt to drain the system using GPS spoofing.
+  
+- GigShield AI prevents this by:
+  - Multi-signal verification (not GPS alone)
+  - Ring detection via timing + IP clustering
+  - Device fingerprinting
+  - Tiered payout control (Green / Yellow / Red)
 ### Data Points — Beyond GPS
 
 | Signal | What It Reveals |
