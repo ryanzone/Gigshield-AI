@@ -97,7 +97,4 @@ Protected routes require `Authorization: Bearer <token>`.
 - Ensure DB file is persisted and backed up
 - Use process manager: `pm2`, `npx nodemon` etc.
 
-## 🧹 Misc
 
-- Linting/style: add ESLint/Prettier as needed
-- Add tests: Jest/Mocha recommended
